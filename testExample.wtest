@@ -1,0 +1,9 @@
+
+
+describe "Academia de cocina" {
+
+  test "test a implementar" {
+    assert.fail("Falta implementar")
+  }
+
+}
