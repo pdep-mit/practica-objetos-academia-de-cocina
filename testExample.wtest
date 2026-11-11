@@ -1,9 +1,14 @@
-
+import example.*
 
 describe "Academia de cocina" {
 
-  test "test a implementar" {
-    assert.fail("Falta implementar")
+  test "Calidad de comida con calidad superior" {
+    // version inicial
+    // const recetaPuchero = new Receta(cantidadDeIngredientes = 5,nivelDeDificultad=2)
+    // post cambio en el modelo
+    const recetaPuchero = new Receta(ingredientes = #{"pollo","papa","zanahoria","zapallo","cebolla"},nivelDeDificultad=2)
+    const puchero = new Comida(receta = recetaPuchero, calidad = new Superior(plusExperiencia = 10))
+    assert.equals(20, puchero.experienciaQueDa())
   }
 
 }
